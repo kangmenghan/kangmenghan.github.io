@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>康梦涵 · 简历</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --text:#222;
+      --gray:#555;
+      --radius:12px;
+      --maxWidth:640px;
+      --gap:2.2rem;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{
+      font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+      background:#f5f7fa;
+      color:var(--text);
+      line-height:1.7;
+      scroll-behavior:smooth;
+    }
+    a{color:#fff;text-decoration:none;}
+
+    /* 顶部导航 */
+    header{
+      position:sticky;top:0;z-index:10;
+      background:#ffffffcc;
+      backdrop-filter:blur(8px);
+      box-shadow:0 2px 6px rgba(0,0,0,.05);
+    }
+    nav{
+      max-width:var(--maxWidth);
+      margin:auto;
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:1.2rem;
+      padding:1rem 2rem;
+      font-size:.9rem;
+      font-weight:500;
+    }
+    nav a{color:var(--gray);transition:color .2s;}
+    nav a:hover{color:#ff7f50;}
+
+    /* 单列容器 */
+    .container{
+      max-width:var(--maxWidth);
+      margin:auto;
+      padding:3rem 1.5rem;
+      display:flex;
+      flex-direction:column;
+      gap:var(--gap);
+    }
+
+    /* 卡片通用 */
+    .card{
+      border-radius:var(--radius);
+      padding:2.2rem 2.5rem 2.5rem;
+      color:#fff;
+      box-shadow:0 6px 18px rgba(0,0,0,.08);
+      animation:fadeUp .8s both;
+    }
+    /* 高区分度纯色 */
+    #info   {background:#3b82f6;}   /* 亮蓝 */
+    #edu    {background:#10b981;}   /* 翠绿 */
+    #skill  {background:#8b5cf6;}   /* 亮紫 */
+    #personal{background:#f59e0b;}  /* 亮黄 */
+    #cert   {background:#ef4444;}   /* 亮红 */
+    #hobby  {background:#06b6d4;}   /* 亮青 */
+    #about  {background:#6366f1;}   /* 亮靛 */
+
+    @keyframes fadeUp{
+      from{opacity:0;transform:translateY(25px);}
+      to{opacity:1;transform:none;}
+    }
+
+    h1{font-size:2.2rem;font-weight:600;margin-bottom:.4rem;}
+    h2{font-size:1.3rem;font-weight:600;margin-bottom:.8rem;letter-spacing:.5px;}
+    p,li{margin:.3rem 0;}
+    ul{padding-left:1.5rem;}
+    .tag{
+      display:inline-block;
+      background:rgba(255,255,255,.2);
+      color:#fff;
+      font-size:.8rem;
+      padding:.25rem .7rem;
+      border-radius:999px;
+      margin:.2rem .4rem .2rem 0;
+      backdrop-filter:blur(4px);
+    }
+    footer{
+      text-align:center;
+      padding:2.5rem 1rem 4rem;
+      font-size:.85rem;
+      color:var(--gray);
+    }
+    .btn{
+      display:inline-block;
+      margin-top:1.2rem;
+      background:#fff;
+      color:#ef4444;
+      padding:.6rem 1.6rem;
+      border-radius:var(--radius);
+      font-weight:600;
+      box-shadow:0 4px 12px rgba(0,0,0,.1);
+      transition:all .25s;
+    }
+    .btn:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.15);}
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#info">基本信息</a>
+      <a href="#edu">教育背景</a>
+      <a href="#skill">专业技能</a>
+      <a href="#personal">个人技能</a>
+      <a href="#cert">证书语言</a>
+      <a href="#hobby">兴趣爱好</a>
+      <a href="#about">自我评价</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="info" class="card">
+      <h1>康梦涵</h1>
+      <p>现代殡葬技术与管理专业 · 河南理工大学</p>
+      <p>电话：13321942176 | 邮箱：2492524384@qq.com</p>
+      <p>出生：2007.02.25 | 籍贯：河南信阳</p>
+      <span class="tag">共青团员</span>
+      <span class="tag">汉族</span>
+    </section>
+
+    <section id="edu" class="card">
+      <h2>教育背景</h2>
+      <p><strong>河南理工大学 · 民政学院</strong></p>
+      <p>现代殡葬技术与管理专业 | 在读</p>
+      <p>主修：生命文化概论、殡葬心理学、殡葬政策法规、遗体整容与防腐、殡葬文书写作、殡仪策划、临终关怀等</p>
+    </section>
+
+    <!-- 专业技能 -->
+    <section id="skill" class="card">
+      <h2>专业技能</h2>
+      <ul>
+        <li>遗体防腐与整容技术</li>
+        <li>殡葬文书 & 殡仪策划</li>
+        <li>殡葬用品设计 · 绿色殡葬实践</li>
+        <li>心理疏导与沟通技巧</li>
+      </ul>
+    </section>
+
+    <!-- 个人技能 -->
+    <section id="personal" class="card">
+      <h2>个人技能</h2>
+      <ul>
+        <li>数据库 & HTML 基础</li>
+        <li>Office 办公软件 & PPT 设计</li>
+        <li>英语 CET-4</li>
+        <li>普通话二级甲等</li>
+      </ul>
+    </section>
+
+    <section id="cert" class="card">
+      <h2>证书与语言</h2>
+      <span class="tag">英语 CET-4</span>
+      <span class="tag">普通话二级甲等</span>
+    </section>
+
+    <section id="hobby" class="card">
+      <h2>兴趣爱好</h2>
+      <p>听音乐 / 阅读 / 手工 / PPT 设计 / 羽毛球</p>
+    </section>
+
+    <section id="about" class="card">
+      <h2>自我评价</h2>
+      <p>性格开朗稳重，工作细致负责，具备良好的心理素质与沟通能力。愿意在殡葬服务领域深耕，用专业与温度陪伴生命最后一程。</p>
+    </section>
+  </main>
+
+  <footer>
+    <a class="btn" href="javascript:window.print()">打印 PDF</a><br>
+    &copy; 2025 康梦涵 · 所有内容均由本人提供
+  </footer>
+</body>
+</html>
